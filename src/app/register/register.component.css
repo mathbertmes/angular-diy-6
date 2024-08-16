@@ -1,0 +1,36 @@
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.ng-valid:not(form) { border: 2px solid #42A948; /* green */ }
+.ng-invalid:not(form)  { border: 2px solid #a94442; /* red */ }
+
+.formWrapper{
+  max-width: 500px;
+}
+
+.alert{
+  color: #a94442;
+  margin-top:-8px;
+  padding-bottom: 8px;
+}
+
+.success{
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 50px;
+  background-color: #06D001;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.success:disabled {
+  background-color: #EEEEEE;
+  color: #dbdbdbdb;
+  cursor: not-allowed;
+}
