@@ -1,3 +1,4 @@
+<div class="contentContainer">
 <div class="formWrapper">
   <form [formGroup]="form" (ngSubmit)="handleSubmit()">
     <div>
@@ -5,7 +6,6 @@
       <input
         matInput
         id="username"
-        name="formWrapper"
         placeholder="Username"
         formControlName="username"
       />
@@ -13,7 +13,7 @@
         *ngIf="username?.invalid && username?.touched"
         class="alert alert-danger"
       >
-        <div *ngIf="username?.hasError('required')">Name is required.</div>
+        <div *ngIf="username?.hasError('required')">Username is required.</div>
       </div>
     </div>
     <div>
@@ -59,4 +59,5 @@
 
     <button class="success" [disabled]="!form.valid" type="submit">Login</button>
   </form>
+</div>
 </div>
