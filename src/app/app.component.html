@@ -1,4 +1,36 @@
-<a routerLink="/register">Register</a>
-<a routerLink="/secret">Secret</a>
+<div class="headerContainer">
+  <header class="headerContent">
+    <div
+      [ngClass]="{
+        'ContainerLinkActive': router.url === '/register',
+        'ContainerLinkInactive': router.url !== '/register'
+      }"
+    >
+      <a
+        [ngClass]="{
+          'active-link': router.url === '/register',
+          'inactive-link': router.url !== '/register'
+        }"
+        routerLink="/register"
+        >Register</a
+      >
+    </div>
+    <div
+      [ngClass]="{
+        'ContainerLinkActive': router.url === '/secret',
+        'ContainerLinkInactive': router.url !== '/secret'
+      }"
+    >
+    <a
+      [ngClass]="{
+        'active-link': router.url === '/secret',
+        'inactive-link': router.url !== '/secret'
+      }"
+      routerLink="/secret"
+      >Secret</a
+    >
+    </div>
+  </header>
+</div>
 
 <router-outlet></router-outlet>
