@@ -16,4 +16,11 @@ export class SecretComponent {
       this.password = JSON.parse(userData).password
     }
   }
+  register(){
+    window.location.replace("/register")
+  }
+  logout(){
+    localStorage.removeItem('user')
+    window.location.replace("/register")
+  }
 }
